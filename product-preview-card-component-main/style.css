@@ -1,0 +1,134 @@
+:root {
+    --primaryFont: "Montserrat", sans-serif;
+    --secfont: "Fraunces", serif;
+
+
+
+    --darkcyan: hsl(158, 36%, 37%);
+
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayhBlue: hsl(228, 12%, 48%);
+    --creamcolor: hsl(30, 38%, 92%);
+    --Whitecolor: hsl(0, 0%, 100%);
+    --Greencolor: hsl(158, 42%, 18%);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--primaryFont);
+    font-weight: 400;
+    background: var(--creamcolor);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: var(--secfont);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-weight: 400;
+}
+
+.card {
+    width: 600px;
+    display: flex;
+}
+
+.card_img {
+    flex-basis: 50%;
+}
+
+.card_img img.desktop {
+    border-radius: 10px 0 0 10px;
+    display: block;
+}
+
+.card_img img.mobile {
+    border-radius: 10px 10px 0 0;
+    display: none;
+}
+
+.card_body {
+    flex-basis: 50%;
+    background: var(--Whitecolor);
+    border-radius: 0 10px 10px 0;
+    padding: 30px;
+}
+
+.card_body h2 {
+    color: var(--VeryDarkBlue);
+    font-size: 32px;
+}
+
+.card_body h4 {
+    color: var(--darkGrayhBlue);
+    font-family: var(--primaryFont);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.card_body p {
+    font-size: 14px;
+    color: var(--darkGrayhBlue);
+    line-height: 1.5em;
+}
+
+.card_body p.price {
+    font-family: var(--secfont);
+    color: var(--darkcyan);
+    font-size: 32px;
+}
+
+.card_body p.price span {
+    font-family: var(--primaryFont);
+    color: var(--darkGrayhBlue);
+    font-size: 14px;
+    text-decoration: line-through;
+    position: relative;
+    top: -5px;
+}
+
+.card_body button {
+    background: var(--darkcyan);
+    border: 0;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--Whitecolor);
+}
+
+.card_body button img {
+    display: inline-block;
+    padding-right: 10px;
+    position: relative;
+    bottom: 3px;
+}
